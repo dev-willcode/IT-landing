@@ -1,6 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "@/pages/Home.vue";
-import About from "@/pages/About.vue";
+import OfertaAcademica from "@/pages/OfertaAcademica.vue";
+import MallaCurricular from "@/pages/MallaCurricular.vue";
+import Docentes from "@/pages/Docentes.vue";
+import Nosotros from "@/pages/Nosotros.vue";
+import Galeria from "@/pages/Galeria.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -8,14 +12,20 @@ const routes: Array<RouteRecordRaw> = [
     name: "Home",
     component: Home
   },
+
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: About
-  }
+    path: "/oferta-academica",
+    name: "OfertaAcademica",
+    component: OfertaAcademica
+  },
+  {
+    path: "/malla-curricular",
+    name: "MallaCurricular",
+    component: MallaCurricular
+  },
+  { path: "/docentes", name: "Docentes", component: Docentes },
+  { path: "/nosotros", name: "Nosotros", component: Nosotros },
+  { path: "/galeria", name: "Galeria", component: Galeria }
 ];
 
 const router = createRouter({

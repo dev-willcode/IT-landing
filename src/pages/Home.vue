@@ -13,7 +13,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Repository from "@/connection/repository.ts";
-import Greetings from "@/components/Greettings.vue";
+import Greetings from "@/components/home/Greetings.vue";
 
 export default defineComponent({
   name: "Homepage",
