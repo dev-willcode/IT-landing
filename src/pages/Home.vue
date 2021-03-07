@@ -1,10 +1,19 @@
 <template>
+  <!-- bienvenida -->
   <section class="flex flex-col">
-    <div id="landing" class="flex p-12">
+    <div
+      id="landing"
+      class="flex justify-around p-12 md:flex-col-reverse md:justify-center"
+    >
       <Greetings
         :nombre="carrera.nombre"
         :frasePromocional="carrera.frase_promocional"
-        class="w-1/3 pt-32"
+      />
+
+      <img
+        src="./../assets/img/logo-utmach.png"
+        class="w-1/3 md:w-full"
+        alt="promocional"
       />
     </div>
   </section>
@@ -12,7 +21,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Repository from "@/connection/repository.ts";
+import Repository from "@/connection/repository";
 import Greetings from "@/components/home/Greetings.vue";
 
 export default defineComponent({
@@ -21,8 +30,6 @@ export default defineComponent({
   setup() {
     const repository = new Repository();
     const carrera = repository.getCarrera();
-
-    console.log(carrera);
 
     return { carrera };
   }

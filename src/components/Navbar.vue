@@ -1,13 +1,6 @@
 <template>
-  <section class="flex items-center">
-    <nav class="flex items-center w-8/12 gap-2 md:flex-wrap">
-      <router-link to="/" name="Home">
-        <img
-          src="@/assets/img/logo-utmach.png"
-          alt="logo utmach"
-          class="object-contain h-12 w-min"
-        />
-      </router-link>
+  <section class="flex w-full shadow-md">
+    <nav class="flex items-center justify-end w-full px-10 md:flex-col">
       <nav-link to="/" name="Home" />
       <nav-link to="/oferta-academica" name="Oferta académica" />
       <nav-link to="/malla-curricular" name="Malla curricular" />

@@ -1,7 +1,7 @@
 <template>
   <router-link
     :to="to"
-    class="w-full h-full p-5 text-center text-gray-800 transition duration-500 hover:text-primary"
+    class="h-full p-5 text-center transition duration-500 hover:text-secondary hover:font-semibold"
   >
     {{ name }}
   </router-link>
