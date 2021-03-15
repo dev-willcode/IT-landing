@@ -229,5 +229,296 @@
       "updated_at": "2021-02-18T16:21:18.141Z",
       "imagen": null
     }
+  ],
+  "profesores": [
+    {
+      "id": 1,
+      "nombre": "Freddy Anibal Jumbo Parralles",
+      "titulo": "Doctor en ciencias computacionales aplicadas al campo cuántico",
+      "carrera": 1,
+      "ddd": null,
+      "published_at": "2021-03-07T22:12:16.267Z",
+      "created_at": "2021-03-07T22:12:13.876Z",
+      "updated_at": "2021-03-07T22:13:27.048Z",
+      "foto": null
+    },
+    {
+      "id": 2,
+      "nombre": "Fausto Fabián Redrován Castillo",
+      "titulo": "doctor en docencia informática",
+      "carrera": 1,
+      "ddd": null,
+      "published_at": "2021-03-07T22:13:10.648Z",
+      "created_at": "2021-03-07T22:12:55.894Z",
+      "updated_at": "2021-03-07T22:13:18.970Z",
+      "foto": null
+    }
+  ],
+  "galerias": [
+    {
+      "id": 1,
+      "carrera": 1,
+      "published_at": "2021-03-07T22:55:16.637Z",
+      "created_at": "2021-03-07T22:55:15.443Z",
+      "updated_at": "2021-03-07T22:57:50.130Z",
+      "imagenes": [
+        {
+          "id": 2,
+          "name": "IMG_20210212_123051.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 9248,
+          "height": 6944,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_IMG_20210212_123051.jpg",
+              "hash": "thumbnail_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 208,
+              "height": 156,
+              "size": 7.33,
+              "path": null,
+              "url": "/uploads/thumbnail_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "large": {
+              "name": "large_IMG_20210212_123051.jpg",
+              "hash": "large_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 751,
+              "size": 127.95,
+              "path": null,
+              "url": "/uploads/large_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "medium": {
+              "name": "medium_IMG_20210212_123051.jpg",
+              "hash": "medium_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 563,
+              "size": 73.94,
+              "path": null,
+              "url": "/uploads/medium_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "small": {
+              "name": "small_IMG_20210212_123051.jpg",
+              "hash": "small_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 375,
+              "size": 33.89,
+              "path": null,
+              "url": "/uploads/small_IMG_20210212_123051_e7953aec96.jpg"
+            }
+          },
+          "hash": "IMG_20210212_123051_e7953aec96",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 6234.5,
+          "url": "/uploads/IMG_20210212_123051_e7953aec96.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-07T22:53:22.235Z",
+          "updated_at": "2021-03-07T22:53:22.251Z"
+        },
+        {
+          "id": 2,
+          "name": "IMG_20210212_123051.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 9248,
+          "height": 6944,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_IMG_20210212_123051.jpg",
+              "hash": "thumbnail_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 208,
+              "height": 156,
+              "size": 7.33,
+              "path": null,
+              "url": "/uploads/thumbnail_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "large": {
+              "name": "large_IMG_20210212_123051.jpg",
+              "hash": "large_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 751,
+              "size": 127.95,
+              "path": null,
+              "url": "/uploads/large_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "medium": {
+              "name": "medium_IMG_20210212_123051.jpg",
+              "hash": "medium_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 563,
+              "size": 73.94,
+              "path": null,
+              "url": "/uploads/medium_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "small": {
+              "name": "small_IMG_20210212_123051.jpg",
+              "hash": "small_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 375,
+              "size": 33.89,
+              "path": null,
+              "url": "/uploads/small_IMG_20210212_123051_e7953aec96.jpg"
+            }
+          },
+          "hash": "IMG_20210212_123051_e7953aec96",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 6234.5,
+          "url": "/uploads/IMG_20210212_123051_e7953aec96.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-07T22:53:22.235Z",
+          "updated_at": "2021-03-07T22:53:22.251Z"
+        },
+        {
+          "id": 2,
+          "name": "IMG_20210212_123051.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 9248,
+          "height": 6944,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_IMG_20210212_123051.jpg",
+              "hash": "thumbnail_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 208,
+              "height": 156,
+              "size": 7.33,
+              "path": null,
+              "url": "/uploads/thumbnail_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "large": {
+              "name": "large_IMG_20210212_123051.jpg",
+              "hash": "large_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 751,
+              "size": 127.95,
+              "path": null,
+              "url": "/uploads/large_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "medium": {
+              "name": "medium_IMG_20210212_123051.jpg",
+              "hash": "medium_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 563,
+              "size": 73.94,
+              "path": null,
+              "url": "/uploads/medium_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "small": {
+              "name": "small_IMG_20210212_123051.jpg",
+              "hash": "small_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 375,
+              "size": 33.89,
+              "path": null,
+              "url": "/uploads/small_IMG_20210212_123051_e7953aec96.jpg"
+            }
+          },
+          "hash": "IMG_20210212_123051_e7953aec96",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 6234.5,
+          "url": "/uploads/IMG_20210212_123051_e7953aec96.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-07T22:53:22.235Z",
+          "updated_at": "2021-03-07T22:53:22.251Z"
+        },
+        {
+          "id": 2,
+          "name": "IMG_20210212_123051.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 9248,
+          "height": 6944,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_IMG_20210212_123051.jpg",
+              "hash": "thumbnail_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 208,
+              "height": 156,
+              "size": 7.33,
+              "path": null,
+              "url": "/uploads/thumbnail_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "large": {
+              "name": "large_IMG_20210212_123051.jpg",
+              "hash": "large_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 751,
+              "size": 127.95,
+              "path": null,
+              "url": "/uploads/large_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "medium": {
+              "name": "medium_IMG_20210212_123051.jpg",
+              "hash": "medium_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 563,
+              "size": 73.94,
+              "path": null,
+              "url": "/uploads/medium_IMG_20210212_123051_e7953aec96.jpg"
+            },
+            "small": {
+              "name": "small_IMG_20210212_123051.jpg",
+              "hash": "small_IMG_20210212_123051_e7953aec96",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 375,
+              "size": 33.89,
+              "path": null,
+              "url": "/uploads/small_IMG_20210212_123051_e7953aec96.jpg"
+            }
+          },
+          "hash": "IMG_20210212_123051_e7953aec96",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 6234.5,
+          "url": "/uploads/IMG_20210212_123051_e7953aec96.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-07T22:53:22.235Z",
+          "updated_at": "2021-03-07T22:53:22.251Z"
+        }
+      ]
+    }
   ]
 }
