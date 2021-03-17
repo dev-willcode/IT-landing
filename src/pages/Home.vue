@@ -3,18 +3,16 @@
   <section class="flex flex-col">
     <div
       id="landing"
-      class="flex justify-around p-12 md:flex-col-reverse md:justify-center"
+      class="flex justify-around p-12 md:flex-col md:justify-center"
     >
       <Greetings
         :nombre="carrera.nombre"
         :frasePromocional="carrera.frase_promocional"
       />
 
-      <img
-        src="./../assets/img/logo-utmach.png"
-        class="w-1/3 md:w-full"
-        alt="promocional"
-      />
+      <figure class="flex items-center w-1/4 md:w-full">
+        <img src="./../assets/img/logo-escuela.png" alt="promocional" />
+      </figure>
     </div>
   </section>
 </template>

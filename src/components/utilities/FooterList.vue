@@ -7,8 +7,8 @@
           :href="item.link"
           class="font-thin transition duration-500 hover:text-secondary hover:font-semibold "
         >
-          <i class="" />
-          > {{ item.text }}
+          <i class="fas fa-chevron-right" />
+          {{ item.text }}
         </a>
       </li>
     </ul>

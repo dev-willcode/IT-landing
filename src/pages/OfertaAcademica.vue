@@ -1,11 +1,48 @@
 <template>
-  <section></section>
+  <section class="flex flex-col justify-center p-8">
+    <HeaderPage
+      titulo="Oferta académica"
+      tagline="Que puede ofrecer un ingeniero de TI a su comunidad y el mundo."
+    />
+    <section class="flex justify-around gap-5 p-5 md:flex-col">
+      <section class="flex flex-col w-1/3 gap-2 lg:w-full ">
+        <h3 class="py-5 text-3xl font-bold">
+          Qué es un ingeniero de tecnologías de la información?
+        </h3>
+        <p class="text-justify">{{ carrera.definicion_titulo_obtenido }}</p>
+      </section>
+
+      <TituloAcademico :titulo="titulo" />
+    </section>
+
+    <Apartado name="Objetivos">
+      <Objetivos :objetivos="objetivos" />
+    </Apartado>
+
+    <Apartado name="Perfiles">
+      <Perfiles :perfiles="perfiles" />
+    </Apartado>
+  </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
+import Repository from "@/connection/repository";
+import HeaderPage from "@/components/utilities/HeaderPage.vue";
+import Apartado from "@/components/oferta/Apartado.vue";
+import Objetivos from "@/components/oferta/Objetivos.vue";
+import Perfiles from "@/components/oferta/Perfiles.vue";
+import TituloAcademico from "@/components/oferta/TituloAcademico.vue";
 export default defineComponent({
-  name: ""
+  name: "OfertaAcademica",
+  props: {},
+  components: { HeaderPage, Apartado, Objetivos, TituloAcademico, Perfiles },
+  setup() {
+    const repository = new Repository();
+    const carrera = repository.getCarrera();
+    const { titulo, objetivos, perfiles } = carrera;
+
+    return { carrera, titulo, objetivos, perfiles };
+  }
 });
 </script>
