@@ -9,6 +9,9 @@ export default class Repository {
   getProfesores(): Record<string, any> {
     return data.profesores;
   }
+  getSemestres(): Record<string, any> {
+    return data.semestres;
+  }
   getGaleria(): Record<string, any> {
     return data.galerias[0];
   }
