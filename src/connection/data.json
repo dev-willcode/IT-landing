@@ -20,66 +20,192 @@
     {
       "id": 1,
       "descripcion": "El propósito del egresado de en la carrera de tecnología  cuenta con las competencias profesionales necesarias para su desempeño en el campo laborar, en el ámbito local, regional y nacional para gestionar las tecnologías de la información para la optimización de los procesos organizacionales basándose en principios de ingeniería y estándares de calidad con ética, responsabilidad, proactividad, liderazgo, emprendimiento y compromiso social,  que permiten a las organizaciones satisfacer sus necesidades y lograr sus objetivos estratégicos.",
-      "tipo_perfil": "perfil_profesional",
       "competencias": "Diseño, instalar, configurar, integrar, monitorear y controlar las tecnologías de la información y comunicación.\nDiseñar, integrar y administrar los sistemas de cómputo, las redes y la seguridad de la información en una organización.\nDesempeñar diferentes roles en proyectos informáticos, en contextos multidisciplinarios y multiculturales, tanto locales como globalizados.\nAplicar metodologías de investigación en la búsqueda, fundamentación y elaboración de soluciones informáticas.",
       "carrera": 1,
+      "tipo_perfil": "Perfil profesional",
       "published_at": "2021-02-17T21:41:46.262Z",
       "created_at": "2021-02-17T18:11:11.741Z",
-      "updated_at": "2021-02-18T16:21:18.140Z",
-      "imagen": null
+      "updated_at": "2021-03-16T18:21:12.353Z",
+      "imagen": {
+        "id": 2,
+        "name": "IMG_20210212_123051.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 9248,
+        "height": 6944,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_IMG_20210212_123051.jpg",
+            "hash": "thumbnail_IMG_20210212_123051_e7953aec96",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 208,
+            "height": 156,
+            "size": 7.33,
+            "path": null,
+            "url": "/uploads/thumbnail_IMG_20210212_123051_e7953aec96.jpg"
+          },
+          "large": {
+            "name": "large_IMG_20210212_123051.jpg",
+            "hash": "large_IMG_20210212_123051_e7953aec96",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 1000,
+            "height": 751,
+            "size": 127.95,
+            "path": null,
+            "url": "/uploads/large_IMG_20210212_123051_e7953aec96.jpg"
+          },
+          "medium": {
+            "name": "medium_IMG_20210212_123051.jpg",
+            "hash": "medium_IMG_20210212_123051_e7953aec96",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 750,
+            "height": 563,
+            "size": 73.94,
+            "path": null,
+            "url": "/uploads/medium_IMG_20210212_123051_e7953aec96.jpg"
+          },
+          "small": {
+            "name": "small_IMG_20210212_123051.jpg",
+            "hash": "small_IMG_20210212_123051_e7953aec96",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 500,
+            "height": 375,
+            "size": 33.89,
+            "path": null,
+            "url": "/uploads/small_IMG_20210212_123051_e7953aec96.jpg"
+          }
+        },
+        "hash": "IMG_20210212_123051_e7953aec96",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 6234.5,
+        "url": "/uploads/IMG_20210212_123051_e7953aec96.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2021-03-07T22:53:22.235Z",
+        "updated_at": "2021-03-07T22:53:22.251Z"
+      }
     },
     {
       "id": 2,
       "descripcion": "El egresado de la carrera de ingeniería de sistemas, posee la habilidad para aplicar el conocimiento de las matemáticas y de la física, destreza para la gerencia centros de cómputo, resuelve problemas de software, hardware, y comunicaciones informáticas y la capacidad de liderar, gestionar o emprender proyectos.",
-      "tipo_perfil": "perfil_ocupacional",
       "competencias": "Jefe de proyectos informáticos.\nGerente de sistemas.\nDirector del departamento de sistemas.\nAuditor informático.\nDirector de planes de desarrollo informático.\n",
       "carrera": 1,
+      "tipo_perfil": "Perfil ocupacional",
       "published_at": "2021-02-17T21:45:12.795Z",
       "created_at": "2021-02-17T21:45:10.187Z",
-      "updated_at": "2021-02-18T16:21:18.140Z",
-      "imagen": null
+      "updated_at": "2021-03-16T18:21:22.435Z",
+      "imagen": {
+        "id": 1,
+        "name": "IMG_20210212_122854.jpg",
+        "alternativeText": "",
+        "caption": "",
+        "width": 9248,
+        "height": 6944,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_IMG_20210212_122854.jpg",
+            "hash": "thumbnail_IMG_20210212_122854_b0ab6bc969",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 208,
+            "height": 156,
+            "size": 6.42,
+            "path": null,
+            "url": "/uploads/thumbnail_IMG_20210212_122854_b0ab6bc969.jpg"
+          },
+          "large": {
+            "name": "large_IMG_20210212_122854.jpg",
+            "hash": "large_IMG_20210212_122854_b0ab6bc969",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 1000,
+            "height": 751,
+            "size": 102.04,
+            "path": null,
+            "url": "/uploads/large_IMG_20210212_122854_b0ab6bc969.jpg"
+          },
+          "medium": {
+            "name": "medium_IMG_20210212_122854.jpg",
+            "hash": "medium_IMG_20210212_122854_b0ab6bc969",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 750,
+            "height": 563,
+            "size": 59.02,
+            "path": null,
+            "url": "/uploads/medium_IMG_20210212_122854_b0ab6bc969.jpg"
+          },
+          "small": {
+            "name": "small_IMG_20210212_122854.jpg",
+            "hash": "small_IMG_20210212_122854_b0ab6bc969",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "width": 500,
+            "height": 375,
+            "size": 27.67,
+            "path": null,
+            "url": "/uploads/small_IMG_20210212_122854_b0ab6bc969.jpg"
+          }
+        },
+        "hash": "IMG_20210212_122854_b0ab6bc969",
+        "ext": ".jpg",
+        "mime": "image/jpeg",
+        "size": 5720.34,
+        "url": "/uploads/IMG_20210212_122854_b0ab6bc969.jpg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2021-03-07T22:51:13.784Z",
+        "updated_at": "2021-03-07T22:51:13.813Z"
+      }
     }
   ],
   "objetivos": [
     {
       "id": 1,
       "titulo": "Conocimiento Integral",
-      "icono": null,
+      "icono": "fa-lightbulb",
       "descripcion": "Proporcionar ciencias básicas mediante las asignaturas: Matemática, Física, Electrónica y Humanísticas.\nIdentificar componentes, sistemas, plataformas y servicios informáticos mediante la utilización de herramientas tecnológicas.\n\n",
       "carrera": 1,
       "published_at": "2021-02-17T22:43:43.191Z",
       "created_at": "2021-02-17T22:43:40.053Z",
-      "updated_at": "2021-02-18T16:21:18.140Z"
+      "updated_at": "2021-03-16T16:11:10.052Z"
     },
     {
       "id": 2,
       "titulo": "Aprendizaje",
-      "icono": null,
+      "icono": "fa-cog",
       "descripcion": "Utilizar formas de enseñanza mediante escenarios presenciales y virtuales para que el estudiante experimente su aprendizaje de manera integral.\nIntegrar redes de aprendizaje mediante proyectos interdisciplinarios para que los estudiantes contextualicen la aplicación de sus conocimientos.",
       "carrera": 1,
       "published_at": "2021-02-17T22:44:34.619Z",
       "created_at": "2021-02-17T22:44:32.471Z",
-      "updated_at": "2021-02-18T16:21:18.140Z"
+      "updated_at": "2021-03-16T16:09:45.415Z"
     },
     {
       "id": 3,
       "titulo": "Pertinencia",
-      "icono": null,
+      "icono": "fa-users",
       "descripcion": "Formar profesionales en tecnologías de información con sentido humano mediante una educación actualizada y vinculada a sus competencias profesionales.\nActualizar conocimientos y tendencias tecnológicas mediante eventos académicos para el desarrollo de nuevas tecnologías informáticas.",
       "carrera": 1,
       "published_at": "2021-02-17T22:45:44.515Z",
       "created_at": "2021-02-17T22:45:41.818Z",
-      "updated_at": "2021-02-18T16:21:18.140Z"
+      "updated_at": "2021-03-16T16:11:42.887Z"
     },
     {
       "id": 4,
       "titulo": "Ciudadanía Integral",
-      "icono": null,
+      "icono": "fa-book",
       "descripcion": "Fomentar un comportamiento ciudadano en el estudiante mediante la práctica de valores éticos, legales, de liderazgo, emprendimiento y compromiso social que le permita desarrollarse en su contexto.\nGestionar las tecnologías de la información mediante la prestación de servicios para crear productos de calidad, seguros y amigables.",
       "carrera": 1,
       "published_at": "2021-02-17T22:47:09.773Z",
       "created_at": "2021-02-17T22:47:07.649Z",
-      "updated_at": "2021-02-18T16:21:18.140Z"
+      "updated_at": "2021-03-16T16:10:39.122Z"
     }
   ],
   "directivos": [
@@ -221,17 +347,26 @@
       "id": 9,
       "nombre": "Noveno Semestre",
       "carrera": 1,
+<<<<<<< HEAD
       "nombre_promocional": "Calidad & Gestión",
       "descripcion": "Este semestre incentiva la revisión de gestión y calidad en TI, además se inicia con la preparación curricular para el proceso de titulación.",
       "published_at": "2021-02-18T00:15:55.862Z",
       "created_at": "2021-02-18T00:15:54.428Z",
       "updated_at": "2021-03-17T14:48:04.940Z",
+=======
+      "nombre_promocional": "Inteligencia de otro nivel",
+      "descripcion": "Ingresando a la inteligencia artificial y e introducción a los seminarios del proceso de titulación.",
+      "published_at": "2021-02-18T00:15:55.862Z",
+      "created_at": "2021-02-18T00:15:54.428Z",
+      "updated_at": "2021-03-15T18:21:37.689Z",
+>>>>>>> 060bc43d6f04b2592d6baea937ada3f2d73a24ba
       "imagen": null
     },
     {
       "id": 10,
       "nombre": "Décimo Semestre",
       "carrera": 1,
+<<<<<<< HEAD
       "nombre_promocional": "Inteligencia de otro nivel",
       "descripcion": "Ingresando a la inteligencia artificial y e introducción a los seminarios del proceso de titulación.",
       "published_at": "2021-02-18T00:16:10.180Z",
@@ -248,6 +383,13 @@
       "published_at": "2021-03-17T14:49:21.810Z",
       "created_at": "2021-03-17T14:49:04.595Z",
       "updated_at": "2021-03-17T14:49:21.845Z",
+=======
+      "nombre_promocional": "La UTMACH actualmente provee un programa de maestrías en desarrollo de software.",
+      "descripcion": "Especialízate!",
+      "published_at": "2021-02-18T00:16:10.180Z",
+      "created_at": "2021-02-18T00:16:08.664Z",
+      "updated_at": "2021-03-15T18:22:00.600Z",
+>>>>>>> 060bc43d6f04b2592d6baea937ada3f2d73a24ba
       "imagen": null
     }
   ],
