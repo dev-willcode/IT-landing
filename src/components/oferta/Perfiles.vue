@@ -26,7 +26,7 @@
       <div class="flex items-center w-1/3 xl:w-full xl:my-10">
         <img
           class="rounded-lg"
-          :src="URL_BASE + perfil.imagen.url"
+          :src="URL_BASE + perfil.imagen?.url"
           alt="logo utmach"
         />
       </div>

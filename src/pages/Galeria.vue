@@ -7,11 +7,8 @@
     <div
       class="grid grid-cols-3 gap-5 text-center sm:grid-cols-1 md:grid-cols-2"
     >
-      <ItemGaleria
-        v-for="item in imagenes"
-        :key="item.url"
-        :foto="URL_BASE + item.url"
-      />
+      <ItemGaleria v-for="item in galeria" :key="item.id" :galeria="item">
+      </ItemGaleria>
     </div>
   </section>
 </template>
@@ -29,9 +26,8 @@ export default defineComponent({
     const repository = new Repository();
     const URL_BASE = repository.URL_BASE;
     const galeria = repository.getGaleria();
-    const imagenes = galeria.imagenes;
 
-    return { URL_BASE, imagenes };
+    return { URL_BASE, galeria };
   }
 });
 </script>

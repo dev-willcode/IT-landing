@@ -5,7 +5,7 @@
       tagline="Un vistazo general de lo que aprenderás a lo largo de la carrera."
     />
     <div
-      class="grid grid-cols-3 gap-6 mx-16 my-5 text-center lg:mx-auto sm:grid-cols-1 lg:grid-cols-2"
+      class="grid grid-cols-3 gap-10 mx-16 my-5 text-center lg:mx-auto sm:grid-cols-1 lg:grid-cols-2"
     >
       <Semestre
         v-for="semestre in semestres"
