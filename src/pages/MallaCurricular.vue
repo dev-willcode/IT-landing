@@ -4,7 +4,9 @@
       titulo="Malla Curricular"
       tagline="Un vistazo general de lo que aprenderás a lo largo de la carrera."
     />
-  <div class="grid grid-cols-3 gap-6 lg:mx-auto mx-16 my-5 text-center sm:grid-cols-1 lg:grid-cols-2">
+    <div
+      class="grid grid-cols-3 gap-6 mx-16 my-5 text-center lg:mx-auto sm:grid-cols-1 lg:grid-cols-2"
+    >
       <Semestre
         v-for="semestre in semestres"
         :key="semestre.nombre_promocional"
@@ -19,12 +21,12 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import HeaderPage from "@/components/utilities/HeaderPage.vue";
-import Semestre from "@/components/mallacurricular/Semestre.vue";
+import Semestre from "@/components/malla/Semestre.vue";
 import Repository from "@/connection/repository";
 
 export default defineComponent({
   name: "MallaCurricular",
-  components: { HeaderPage, Semestre},
+  components: { HeaderPage, Semestre },
   setup() {
     const repository = new Repository();
     const semestres = repository.getSemestres();

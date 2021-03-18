@@ -1,6 +1,6 @@
 <template>
   <button
-    class="px-8 py-3 font-semibold border-2 shadow-md text-primary border-primary rounded-xl hover:border-transparent hover:bg-primary-light hover:text-white focus:outline-none"
+    class="font-thin transition duration-500 cursor-pointer hover:text-secondary hover:font-bold"
   >
     <slot />
   </button>

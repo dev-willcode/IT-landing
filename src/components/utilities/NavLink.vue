@@ -4,7 +4,10 @@
     class="h-full p-5 text-center transition duration-500 hover:text-secondary hover:font-semibold"
     :class="{ 'text-secondary font-semibold': verificarRutaActual(to) }"
   >
-    {{ name }}
+    <span>
+      <i v-if="icon" class="fas" :class="icon" /> &nbsp;
+      {{ name }}
+    </span>
   </router-link>
 </template>
 
@@ -16,6 +19,10 @@ export default defineComponent({
   name: "PrimaryButton",
   props: {
     name: {
+      type: String,
+      required: true
+    },
+    icon: {
       type: String,
       required: true
     },

@@ -1,6 +1,10 @@
 <template>
   <section>
-    <img class="w-128 h-128" :src="computedFoto" :alt="nombre" />
+    <img
+      class="shadow-md w-128 h-128 rounded-xl"
+      :src="computedFoto"
+      :alt="nombre"
+    />
   </section>
 </template>
 

@@ -347,49 +347,22 @@
       "id": 9,
       "nombre": "Noveno Semestre",
       "carrera": 1,
-<<<<<<< HEAD
-      "nombre_promocional": "Calidad & Gestión",
-      "descripcion": "Este semestre incentiva la revisión de gestión y calidad en TI, además se inicia con la preparación curricular para el proceso de titulación.",
-      "published_at": "2021-02-18T00:15:55.862Z",
-      "created_at": "2021-02-18T00:15:54.428Z",
-      "updated_at": "2021-03-17T14:48:04.940Z",
-=======
       "nombre_promocional": "Inteligencia de otro nivel",
       "descripcion": "Ingresando a la inteligencia artificial y e introducción a los seminarios del proceso de titulación.",
       "published_at": "2021-02-18T00:15:55.862Z",
       "created_at": "2021-02-18T00:15:54.428Z",
       "updated_at": "2021-03-15T18:21:37.689Z",
->>>>>>> 060bc43d6f04b2592d6baea937ada3f2d73a24ba
       "imagen": null
     },
     {
       "id": 10,
       "nombre": "Décimo Semestre",
       "carrera": 1,
-<<<<<<< HEAD
-      "nombre_promocional": "Inteligencia de otro nivel",
-      "descripcion": "Ingresando a la inteligencia artificial y e introducción a los seminarios del proceso de titulación.",
-      "published_at": "2021-02-18T00:16:10.180Z",
-      "created_at": "2021-02-18T00:16:08.664Z",
-      "updated_at": "2021-03-17T14:48:25.061Z",
-      "imagen": null
-    },
-    {
-      "id": 11,
-      "nombre": "Maestría",
-      "carrera": 1,
-      "nombre_promocional": "Especialízate!",
-      "descripcion": "La UTMACH actualmente provee un programa de maestrías en desarrollo de software.",
-      "published_at": "2021-03-17T14:49:21.810Z",
-      "created_at": "2021-03-17T14:49:04.595Z",
-      "updated_at": "2021-03-17T14:49:21.845Z",
-=======
       "nombre_promocional": "La UTMACH actualmente provee un programa de maestrías en desarrollo de software.",
       "descripcion": "Especialízate!",
       "published_at": "2021-02-18T00:16:10.180Z",
       "created_at": "2021-02-18T00:16:08.664Z",
       "updated_at": "2021-03-15T18:22:00.600Z",
->>>>>>> 060bc43d6f04b2592d6baea937ada3f2d73a24ba
       "imagen": null
     }
   ],

@@ -4,7 +4,7 @@
       titulo="Nuestra carrera"
       tagline="Información util sobre nuestra carrera, sus directivos y contactos principales."
     />
-    <section class="flex justify-between gap-5 sm:flex-col-reverse">
+    <section class="flex justify-around gap-5 sm:flex-col-reverse">
       <div class="flex flex-col gap-3">
         <Directivo
           v-for="directivo in directivos"
@@ -15,7 +15,9 @@
           :foto="directivo.foto"
         />
       </div>
-      <div class="flex flex-col items-center justify-center w-1/2 sm:w-full">
+      <div
+        class="flex flex-col items-center justify-center w-1/2 p-10 shadow-md md:w-full rounded-xl bg-secondary"
+      >
         <p class="text-justify">
           La carrera de Ingeniería en Tecnologías de la Información se ocupa de
           formar profesionales con altos conocimientos tecnológicos en las áreas

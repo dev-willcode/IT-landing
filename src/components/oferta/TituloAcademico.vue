@@ -1,11 +1,11 @@
 <template>
   <section
-    class="flex flex-col justify-center w-1/3 px-6 py-5 bg-white rounded-lg shadow-md lg:w-full"
+    class="flex flex-col justify-center w-1/3 px-6 py-5 bg-white rounded-lg shadow-md text-primary-dark lg:w-full"
   >
     <span class="font-thin">Título académico</span>
     <p class="text-lg font-semibold">{{ titulo.nombre }}</p>
 
-    <div class="my-5 border-b-2 border-black" />
+    <div class="my-5 border-b-2 border-primary-light" />
     <article class="flex justify-around gap-3">
       <div>
         <span class="font-thin">Periodos</span>

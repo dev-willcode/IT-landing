@@ -16,15 +16,29 @@ module.exports = {
           dark: "#111827"
         },
         secondary: {
-          light: "#226FC4",
-          DEFAULT: "#226FC4",
-          dark: "#226FC4"
+          light: "#148BC8",
+          DEFAULT: "#0C78AD",
+          dark: "#104E6D"
+        }
+      },
+      animation: {
+        "navbar-active": "appear-navbar .8s ease-in forwards",
+        "navbar-inactive": "hide-navbar .8s ease-out forwards"
+      },
+      keyframes: {
+        "hide-navbar": {
+          from: { height: "384px", opacity: "100%" },
+          to: { height: "0", opacity: "0%" }
+        },
+        "appear-navbar": {
+          from: { height: "0", opacity: "0%" },
+          to: { height: "384px", opacity: "100%" }
         }
       }
-    }
-  },
-  variants: {
-    extend: {}
-  },
-  plugins: []
+    },
+    variants: {
+      extend: {}
+    },
+    plugins: []
+  }
 };
