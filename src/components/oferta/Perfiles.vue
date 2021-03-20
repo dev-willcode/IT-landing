@@ -1,5 +1,5 @@
 <template>
-  <div class="w-3/4 mx-auto lg:w-auto">
+  <div class="w-3/4 mx-auto max-w-7xl lg:w-auto">
     <section
       v-for="(perfil, index) in perfiles"
       :key="index"
