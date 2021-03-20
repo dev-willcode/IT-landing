@@ -7,12 +7,16 @@
   <div class="grid grid-cols-3 gap-6 lg:mx-auto mx-16 my-5 text-center sm:grid-cols-1 lg:grid-cols-2">
       <Semestre
         v-for="semestre in semestres"
-        :key="semestre.nombre_promocional"
+        :key="semestre.id"
         :nombrePromocional="semestre.nombre_promocional"
         :descripcion="semestre.descripcion"
         :foto="semestre.foto"
       />
     </div>
+    <div>
+
+    </div>
+
   </section>
 </template>
 
@@ -21,7 +25,6 @@ import { defineComponent } from "vue";
 import HeaderPage from "@/components/utilities/HeaderPage.vue";
 import Semestre from "@/components/mallacurricular/Semestre.vue";
 import Repository from "@/connection/repository";
-
 export default defineComponent({
   name: "MallaCurricular",
   components: { HeaderPage, Semestre},

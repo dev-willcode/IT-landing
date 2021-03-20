@@ -1,7 +1,7 @@
 <template>
   <section class="gap-5 p-3">
     <div class="flex justify-center">
-      <img class="w-1/2 h-1/2" :src="computedFoto" :alt="nombre" />
+      <img class="w-1/2 h-1/2" :src="computedFoto" :alt="nombrePromocional" />
     </div>
     <article class="p-3 text-justify shadow-md">
       <h4 class="p-1 text-2xl font-bold">{{ nombrePromocional }}</h4>
