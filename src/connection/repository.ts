@@ -13,6 +13,6 @@ export default class Repository {
     return data.semestres;
   }
   getGaleria(): Record<string, any> {
-    return data.galerias[0];
+    return data.galerias;
   }
 }

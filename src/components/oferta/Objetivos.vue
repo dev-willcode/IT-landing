@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-4 gap-5 xl:grid-cols-2 md:grid-cols-1">
     <article
-      class="p-5 text-center shadow-md"
+      class="p-5 text-center shadow-md bg-secondary"
       v-for="objetivo in objetivos"
       :key="objetivo.titulo"
     >

@@ -1,14 +1,14 @@
 <template>
-  <div class="w-3/4 mx-auto my-0">
+  <div class="w-3/4 mx-auto lg:w-auto">
     <section
       v-for="(perfil, index) in perfiles"
       :key="index"
-      class="flex justify-around gap-10 py-5 xl:flex-col"
+      class="flex justify-between p-10 my-10 bg-white rounded-lg shadow-xl xl:flex-col text-primary-dark"
       :class="{ 'flex-row-reverse': index % 2 !== 0 }"
     >
       <div class="w-1/2 xl:w-full">
-        <h3 class="inline text-2xl font-semibold">{{ perfil.tipo_perfil }}</h3>
-        <div class="h-2 my-5 border-b-2 border-gray-500" />
+        <h3 class="inline text-3xl font-semibold">{{ perfil.tipo_perfil }}</h3>
+        <div class="h-2 my-5 border-b-2 border-primary-light" />
         <p class="py-5 text-justify">{{ perfil.descripcion }}</p>
         <ul class="px-5">
           <li
@@ -24,7 +24,11 @@
         </ul>
       </div>
       <div class="flex items-center w-1/3 xl:w-full xl:my-10">
-        <img :src="URL_BASE + perfil.imagen.url" alt="logo utmach" />
+        <img
+          class="rounded-lg"
+          :src="URL_BASE + perfil.imagen?.url"
+          alt="logo utmach"
+        />
       </div>
     </section>
   </div>

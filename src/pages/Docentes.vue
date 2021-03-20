@@ -4,7 +4,9 @@
       titulo="Docentes"
       tagline="Los docentes que educan en nuestra carrera."
     />
-    <div class="grid grid-cols-3 text-center sm:grid-cols-1 md:grid-cols-2">
+    <div
+      class="grid grid-cols-3 gap-5 text-center sm:grid-cols-1 md:grid-cols-2"
+    >
       <Profesor
         v-for="profesor in profesores"
         :key="profesor.nombre"
