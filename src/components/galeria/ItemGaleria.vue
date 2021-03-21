@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import Repository from "@/connection/repository";
+import { getURL } from "@/connection/repository";
 import { defineComponent, ref, computed } from "vue";
 import ContenidoGaleria from "@/components/galeria/ContenidoGaleria.vue";
 import Modal from "@/components/utilities/Modal.vue";
@@ -34,12 +34,11 @@ export default defineComponent({
   },
   components: { Modal, ContenidoGaleria },
   setup(props) {
-    const { URL_BASE } = new Repository();
     const verGaleriaDetalle = ref(false);
 
     const computedFoto = computed(() => {
       return (
-        URL_BASE + props.galeria?.imagen?.url ||
+        getURL(props.galeria?.imagen?.url) ||
         require("./../../assets/img/logo-utmach.png")
       );
     });

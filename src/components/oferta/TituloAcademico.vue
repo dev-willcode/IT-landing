@@ -1,7 +1,7 @@
 <template>
-  <section class="relative">
+  <Card :oscuro="false">
     <div
-      class="relative z-10 flex flex-col justify-center w-full h-full p-6 bg-white rounded-lg shadow-md text-primary-dark lg:w-full"
+      class="flex flex-col justify-center w-full h-full p-6 bg-white rounded-lg shadow-md text-primary-dark lg:w-full"
     >
       <span class="font-thin">Título académico</span>
       <p class="text-lg font-semibold">{{ titulo.nombre }}</p>
@@ -23,12 +23,12 @@
         </div>
       </article>
     </div>
-    <div class="absolute w-full h-full bg-gray-400 rounded-xl top-3 left-3" />
-  </section>
+  </Card>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Card from "@/components/utilities/Card.vue";
 
 export default defineComponent({
   name: "Apartado",
@@ -38,6 +38,6 @@ export default defineComponent({
       required: true
     }
   },
-  components: {}
+  components: { Card }
 });
 </script>

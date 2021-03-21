@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="fixed inset-0 z-10 overflow-y-auto"
-    :class="{ hidden: !modelValue }"
-  >
+  <div class="fixed inset-0 overflow-y-auto" :class="{ hidden: !modelValue }">
     <div
       class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
     >

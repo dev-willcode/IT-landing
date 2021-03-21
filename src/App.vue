@@ -9,10 +9,16 @@ import { defineComponent } from "vue";
 
 import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
+import Repository from "./connection/repository";
 
 export default defineComponent({
   name: "App",
-  components: { Navbar, Footer }
+  components: { Navbar, Footer },
+  setup() {
+    const repository = new Repository();
+
+    repository.obtenerDatos();
+  }
 });
 </script>
 

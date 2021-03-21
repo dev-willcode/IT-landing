@@ -22,15 +22,13 @@
 import { defineComponent } from "vue";
 import HeaderPage from "@/components/utilities/HeaderPage.vue";
 import Profesor from "@/components/docentes/Profesor.vue";
-import Repository from "@/connection/repository";
+import { datosCarrera } from "@/connection/repository";
 
 export default defineComponent({
   name: "Docentes",
   components: { HeaderPage, Profesor },
   setup() {
-    const repository = new Repository();
-    const profesores = repository.getProfesores();
-
+    const { profesores } = datosCarrera;
     return { profesores };
   }
 });

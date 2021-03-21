@@ -9,7 +9,7 @@
         <h3 class="py-5 text-3xl font-bold">
           Qué es un ingeniero de tecnologías de la información?
         </h3>
-        <p class="text-justify">{{ carrera.definicion_titulo_obtenido }}</p>
+        <p class="text-justify">{{ titulo.definicion_promocional }}</p>
       </section>
 
       <TituloAcademico :titulo="titulo" />
@@ -27,7 +27,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Repository from "@/connection/repository";
+import { datosCarrera } from "@/connection/repository";
 import HeaderPage from "@/components/utilities/HeaderPage.vue";
 import Apartado from "@/components/oferta/Apartado.vue";
 import Objetivos from "@/components/oferta/Objetivos.vue";
@@ -38,11 +38,8 @@ export default defineComponent({
   props: {},
   components: { HeaderPage, Apartado, Objetivos, TituloAcademico, Perfiles },
   setup() {
-    const repository = new Repository();
-    const carrera = repository.getCarrera();
-    const { titulo, objetivos, perfiles } = carrera;
-
-    return { carrera, titulo, objetivos, perfiles };
+    const { titulo, objetivos, perfiles } = datosCarrera;
+    return { titulo, objetivos, perfiles };
   }
 });
 </script>

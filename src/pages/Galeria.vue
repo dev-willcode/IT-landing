@@ -20,17 +20,14 @@
 import { defineComponent } from "vue";
 import HeaderPage from "@/components/utilities/HeaderPage.vue";
 import ItemGaleria from "@/components/galeria/ItemGaleria.vue";
-import Repository from "@/connection/repository";
+import { datosCarrera } from "@/connection/repository";
 
 export default defineComponent({
   name: "Galeria",
   components: { HeaderPage, ItemGaleria },
   setup() {
-    const repository = new Repository();
-    const URL_BASE = repository.URL_BASE;
-    const galeria = repository.getGaleria();
-
-    return { URL_BASE, galeria };
+    const { galeria } = datosCarrera;
+    return { galeria };
   }
 });
 </script>

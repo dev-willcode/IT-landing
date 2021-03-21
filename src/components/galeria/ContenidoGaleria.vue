@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import Repository from "@/connection/repository";
+import { getURL } from "@/connection/repository";
 import { defineComponent, computed } from "vue";
 
 export default defineComponent({
@@ -24,10 +24,9 @@ export default defineComponent({
     galeria: Object
   },
   setup(props) {
-    const { URL_BASE } = new Repository();
     const computedFoto = computed(() => {
       return (
-        URL_BASE + props.galeria?.imagen?.url ||
+        getURL(props.galeria?.imagen?.url) ||
         require("./../../assets/img/logo-utmach.png")
       );
     });

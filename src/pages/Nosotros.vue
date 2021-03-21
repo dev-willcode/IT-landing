@@ -4,7 +4,7 @@
       titulo="Nuestra carrera"
       tagline="Información util sobre nuestra carrera, sus directivos y contactos principales."
     />
-    <section class="flex justify-around gap-5 sm:flex-col-reverse">
+    <section class="flex justify-around gap-5 py-10 sm:flex-col-reverse">
       <div class="flex flex-col gap-3">
         <Directivo
           v-for="directivo in directivos"
@@ -15,40 +15,43 @@
           :foto="directivo.foto"
         />
       </div>
-      <div
-        class="flex flex-col items-center justify-center w-1/2 p-10 shadow-md md:w-full rounded-xl bg-secondary"
-      >
-        <p class="text-justify">
-          La carrera de Ingeniería en Tecnologías de la Información se ocupa de
-          formar profesionales con altos conocimientos tecnológicos en las áreas
-          de programación, redes, interacción humano computador, bases de datos
-          y sistemas web; capaces de planear, diseñar, organizar y mantener la
-          información de forma segura usando metodologías y estándares
-          internacionales, con un alto sentido de investigación y
-          responsabilidad con la sociedad y la comunidad productiva.
-        </p>
-        <img
-          class="block w-32 h-32 m-8"
-          src="./../assets/img/logo-utmach.png"
-          alt="utmach"
-        />
-      </div>
+
+      <Card class="max-w-2xl">
+        <section
+          class="flex flex-col items-center justify-center p-8 bg-secondary rounded-xl"
+        >
+          <p class="text-justify">
+            La carrera de Ingeniería en Tecnologías de la Información se ocupa
+            de formar profesionales con altos conocimientos tecnológicos en las
+            áreas de programación, redes, interacción humano computador, bases
+            de datos y sistemas web; capaces de planear, diseñar, organizar y
+            mantener la información de forma segura usando metodologías y
+            estándares internacionales, con un alto sentido de investigación y
+            responsabilidad con la sociedad y la comunidad productiva.
+          </p>
+          <img
+            class="block w-32 h-32 m-8"
+            src="./../assets/img/logo-utmach.png"
+            alt="utmach"
+          />
+        </section>
+      </Card>
     </section>
   </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { datosCarrera } from "@/connection/repository";
 import HeaderPage from "@/components/utilities/HeaderPage.vue";
 import Directivo from "@/components/docentes/Directivo.vue";
-import Repository from "@/connection/repository";
+import Card from "@/components/utilities/Card.vue";
 
 export default defineComponent({
   name: "Nosotros",
-  components: { HeaderPage, Directivo },
+  components: { HeaderPage, Directivo, Card },
   setup() {
-    const repository = new Repository();
-    const directivos = repository.getCarrera().directivos;
+    const { directivos } = datosCarrera;
     return { directivos };
   }
 });

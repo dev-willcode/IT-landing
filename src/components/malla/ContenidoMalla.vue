@@ -7,7 +7,10 @@
         :alt="semestres.nombre_promocional"
       />
     </div>
-    <div class="grid grid-cols-2">
+    <div
+      class="grid "
+      :class="semestres.materias ? 'grid-cols-2' : 'grid-cols-1'"
+    >
       <div class="p-5">
         <h4 class="p-1 text-xl font-bold">
           {{ semestres.nombre_promocional }}
@@ -15,35 +18,46 @@
         <div class="my-5 border-b-2 border-primary-light" />
         <p class="p-1 font-thin text-justify">{{ semestres.descripcion }}</p>
       </div>
-      <div class="p-5">
-        <h4 class="p-1 font-thin text-justify">
-          Las materias del {{ semestres.nombre || cas }} son:
-        </h4>
-        <p class="text-justify">{{ semestres.materias }}</p>
-      </div>
+      <LinkList
+        class="p-5"
+        v-if="semestres.materias"
+        listTitle="Materias por semestre"
+        :items="descomponerMaterias(semestres.materias)"
+      />
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import Repository from "@/connection/repository";
+import { getURL } from "@/connection/repository";
 import { defineComponent, computed } from "vue";
-
+import LinkList from "@/components/utilities/LinkList.vue";
 export default defineComponent({
   name: "ContenidoMalla",
   props: {
     semestres: Object
   },
+  components: { LinkList },
   setup(props) {
-    const { URL_BASE } = new Repository();
     const computedFoto = computed(() => {
       return (
-        URL_BASE + props.semestres?.imagen?.url ||
+        getURL(props.semestres?.imagen?.url) ||
         require("./../../assets/img/logo-utmach.png")
       );
     });
+    const descomponerMaterias = function(materias: string) {
+      if (materias) {
+        return materias
+          .split("\n")
+          .filter(elem => !!elem)
+          .map(item => {
+            return { text: item };
+          });
+      }
+      return [];
+    };
 
-    return { computedFoto };
+    return { computedFoto, descomponerMaterias };
   }
 });
 </script>

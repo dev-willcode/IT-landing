@@ -7,15 +7,19 @@
     </h1>
     <p>{{ frasePromocional }}</p>
     <div class="flex items-center gap-4 pt-5 xl:flex-col md:w-full">
-      <primary-button>Nuestra oferta académica</primary-button>
-      <secondary-button>Más sobre nuestra carrera </secondary-button>
+      <primary-button @click="navegar({ name: 'OfertaAcademica' })"
+        >Nuestra oferta académica</primary-button
+      >
+      <secondary-button @click="navegar({ name: 'Nosotros' })"
+        >Más sobre nuestra carrera
+      </secondary-button>
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-
+import { useRouter } from "vue-router";
 import PrimaryButton from "@/components/utilities/PrimaryButton.vue";
 import SecondaryButton from "@/components/utilities/SecondaryButton.vue";
 
@@ -31,6 +35,10 @@ export default defineComponent({
       default: ""
     }
   },
-  components: { PrimaryButton, SecondaryButton }
+  components: { PrimaryButton, SecondaryButton },
+  setup() {
+    const { push: navegar } = useRouter();
+    return { navegar };
+  }
 });
 </script>

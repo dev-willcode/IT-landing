@@ -30,8 +30,16 @@
 
     <!-- copyright -->
     <div class="flex sm:flex-col sm:gap-5">
-      <FooterList listTitle="Colaboradores" :items="contributorsList" />
-      <FooterList listTitle="Links de interés" :items="interestList" />
+      <LinkList
+        class="text-white"
+        listTitle="Colaboradores"
+        :items="contributorsList"
+      />
+      <LinkList
+        class="text-white"
+        listTitle="Links de interés"
+        :items="interestList"
+      />
     </div>
   </section>
 
@@ -45,11 +53,11 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import FooterList from "@/components/utilities/FooterList.vue";
+import LinkList from "@/components/utilities/LinkList.vue";
 
 export default defineComponent({
   name: "NavBar",
-  components: { FooterList },
+  components: { LinkList },
   setup() {
     const contributorsList = [
       { text: "Willy Álvaro Carreño Tejada" },

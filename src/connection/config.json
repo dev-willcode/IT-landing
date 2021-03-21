@@ -1,0 +1,5 @@
+{
+  "URL_PROD": "http://localhost:1337",
+  "URL_DEV": "http://localhost:1337",
+  "DEV_MODE": true
+}
