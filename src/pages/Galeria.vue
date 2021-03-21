@@ -7,8 +7,11 @@
     <div
       class="grid grid-cols-3 gap-5 text-center sm:grid-cols-1 md:grid-cols-2"
     >
-      <ItemGaleria v-for="item in galeria" :key="item.id" :galeria="item">
-      </ItemGaleria>
+      <ItemGaleria
+        v-for="item in galeria"
+        :key="item.id"
+        :galeria="item"
+      ></ItemGaleria>
     </div>
   </section>
 </template>

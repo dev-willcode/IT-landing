@@ -7,33 +7,30 @@
     <div
       class="grid grid-cols-3 gap-10 mx-16 my-5 text-center lg:mx-auto sm:grid-cols-1 lg:grid-cols-2"
     >
-      <Semestre
-        v-for="semestre in semestres"
-        :key="semestre.id"
-        :nombrePromocional="semestre.nombre_promocional"
-        :descripcion="semestre.descripcion"
-        :foto="semestre.foto"
-      />
+      <ItemMalla
+        v-for="item in semestres"
+        :key="item.id"
+        :semestres="item"
+      ></ItemMalla>
     </div>
-    <div>
-
-    </div>
-
   </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import HeaderPage from "@/components/utilities/HeaderPage.vue";
-import Semestre from "@/components/malla/Semestre.vue";
+import ItemMalla from "@/components/malla/ItemMalla.vue";
 import Repository from "@/connection/repository";
+
 export default defineComponent({
   name: "MallaCurricular",
-  components: { HeaderPage, Semestre },
+  components: { HeaderPage, ItemMalla },
   setup() {
     const repository = new Repository();
+    const URL_BASE = repository.URL_BASE;
     const semestres = repository.getSemestres();
-    return { semestres };
+
+    return { URL_BASE, semestres };
   }
 });
 </script>

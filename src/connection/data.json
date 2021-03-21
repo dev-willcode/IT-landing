@@ -22,10 +22,10 @@
       "descripcion": "El propósito del egresado de en la carrera de tecnología  cuenta con las competencias profesionales necesarias para su desempeño en el campo laborar, en el ámbito local, regional y nacional para gestionar las tecnologías de la información para la optimización de los procesos organizacionales basándose en principios de ingeniería y estándares de calidad con ética, responsabilidad, proactividad, liderazgo, emprendimiento y compromiso social,  que permiten a las organizaciones satisfacer sus necesidades y lograr sus objetivos estratégicos.",
       "competencias": "Diseño, instalar, configurar, integrar, monitorear y controlar las tecnologías de la información y comunicación.\nDiseñar, integrar y administrar los sistemas de cómputo, las redes y la seguridad de la información en una organización.\nDesempeñar diferentes roles en proyectos informáticos, en contextos multidisciplinarios y multiculturales, tanto locales como globalizados.\nAplicar metodologías de investigación en la búsqueda, fundamentación y elaboración de soluciones informáticas.",
       "carrera": 1,
-      "tipo_perfil": "Perfil profesional",
+      "tipo_perfil": "perfil_profesional",
       "published_at": "2021-02-17T21:41:46.262Z",
       "created_at": "2021-02-17T18:11:11.741Z",
-      "updated_at": "2021-03-18T16:29:55.828Z",
+      "updated_at": "2021-02-18T16:21:18.140Z",
       "imagen": null
     },
     {
@@ -33,10 +33,10 @@
       "descripcion": "El egresado de la carrera de ingeniería de sistemas, posee la habilidad para aplicar el conocimiento de las matemáticas y de la física, destreza para la gerencia centros de cómputo, resuelve problemas de software, hardware, y comunicaciones informáticas y la capacidad de liderar, gestionar o emprender proyectos.",
       "competencias": "Jefe de proyectos informáticos.\nGerente de sistemas.\nDirector del departamento de sistemas.\nAuditor informático.\nDirector de planes de desarrollo informático.\n",
       "carrera": 1,
-      "tipo_perfil": "Perfil ocupacional",
+      "tipo_perfil": "perfil_ocupacional",
       "published_at": "2021-02-17T21:45:12.795Z",
       "created_at": "2021-02-17T21:45:10.187Z",
-      "updated_at": "2021-03-18T16:30:06.704Z",
+      "updated_at": "2021-02-18T16:21:18.140Z",
       "imagen": null
     }
   ],
@@ -279,12 +279,12 @@
     {
       "id": 1,
       "carrera": 1,
-      "ubicacion_externa": "Interiores de la carrera",
-      "ubicacion_interna": "Lobby primer piso",
-      "descripcion": "Lobby principal de la escuela, cuenta con espacios amplios para la estadía de los estudiantes.",
+      "ubicacion_externa": null,
+      "ubicacion_interna": null,
+      "descripcion": null,
       "published_at": "2021-03-07T22:55:16.637Z",
       "created_at": "2021-03-07T22:55:15.443Z",
-      "updated_at": "2021-03-18T16:33:27.387Z",
+      "updated_at": "2021-03-07T22:57:50.130Z",
       "imagen": {
         "id": 2,
         "name": "IMG_20210212_123051.jpg",
