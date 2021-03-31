@@ -1,4 +1,4 @@
-import { DEV_MODE, URL_DEV, URL_PROD } from "./config.json";
+import { DEV_MODE, URL_DEV, URL_PROD, ACCESS_ID } from "./config.json";
 
 import { reactive } from "@vue/reactivity";
 import { computed } from "@vue/runtime-core";
@@ -21,7 +21,7 @@ export function getURL(access = "") {
  */
 export default class Repository {
   async obtenerDatos() {
-    return await fetch(getURL("/carreras/1/"))
+    return await fetch(getURL(`/carreras/${ACCESS_ID}/`))
       .then(response => response.json())
       .then(data => {
         state.carrera = data;
@@ -32,7 +32,11 @@ export default class Repository {
 // getters computados para las propiedades reactivas
 
 const carrera = computed(() => state.carrera);
-const profesores = computed(() => state.carrera.profesores);
+const profesores = computed(() =>
+  state.carrera.profesores.sort((first, second) =>
+    first.nombre.localeCompare(second.nombre)
+  )
+);
 const semestres = computed(() => state.carrera.semestres);
 const galeria = computed(() => state.carrera.galerias);
 const titulo = computed(() => state.carrera.titulo);

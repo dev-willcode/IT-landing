@@ -8,7 +8,7 @@
       />
     </div>
     <div
-      class="grid "
+      class="grid"
       :class="semestres.materias ? 'grid-cols-2' : 'grid-cols-1'"
     >
       <div class="p-5">
@@ -22,7 +22,7 @@
         class="p-5"
         v-if="semestres.materias"
         listTitle="Materias por semestre"
-        :items="descomponerMaterias(semestres.materias)"
+        :items="descomponerStringArray(semestres.materias)"
       />
     </div>
   </section>
@@ -30,6 +30,7 @@
 
 <script lang="ts">
 import { getURL } from "@/connection/repository";
+import { descomponerStringArray } from "@/utils/stringFormat";
 import { defineComponent, computed } from "vue";
 import LinkList from "@/components/utilities/LinkList.vue";
 export default defineComponent({
@@ -45,19 +46,8 @@ export default defineComponent({
         require("./../../assets/img/logo-utmach.png")
       );
     });
-    const descomponerMaterias = function(materias: string) {
-      if (materias) {
-        return materias
-          .split("\n")
-          .filter(elem => !!elem)
-          .map(item => {
-            return { text: item };
-          });
-      }
-      return [];
-    };
 
-    return { computedFoto, descomponerMaterias };
+    return { computedFoto, descomponerStringArray };
   }
 });
 </script>
