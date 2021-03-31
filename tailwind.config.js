@@ -27,12 +27,12 @@ module.exports = {
       },
       keyframes: {
         "hide-navbar": {
-          from: { height: "384px", opacity: "100%" },
-          to: { height: "0", opacity: "0%" }
+          from: { height: "384px", opacity: "1" },
+          to: { height: "0", opacity: "0" }
         },
         "appear-navbar": {
-          from: { height: "0", opacity: "0%" },
-          to: { height: "384px", opacity: "100%" }
+          from: { height: "0", opacity: "0" },
+          to: { height: "384px", opacity: "1" }
         }
       }
     },
