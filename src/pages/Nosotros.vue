@@ -5,7 +5,7 @@
       tagline="Información util sobre nuestra carrera, sus directivos y contactos principales."
     />
 
-    <section class="flex justify-center items-center">
+    <section class="flex items-center justify-center">
       <figure
         class="flex items-center w-1/6 xl:w-1/5 lg:w-1/3 md:w-4/6 sm:w-4/5"
       >
@@ -13,10 +13,8 @@
       </figure>
     </section>
 
-    <section
-      class="flex justify-around gap-5 py-10 pr-10 sm:flex-col md:flex-col lg:flex-col xl:grid-cols-2 lg:w-10/12 md:w-full"
-    >
-      <div class="flex flex-col gap-3">
+    <section class="flex items-center gap-5 px-12 mx-auto my-5 xl:flex-col">
+      <div class="flex flex-col w-4/5 gap-3 xl:w-full">
         <Directivo
           v-for="directivo in directivos"
           :key="directivo.nombre"
@@ -27,9 +25,9 @@
         />
       </div>
 
-      <div class="flex flex-col gap-6">
-        <Card class="max-w-2xl">
-          <section class="flex flex-col  p-8 bg-secondary rounded-xl">
+      <div class="flex flex-col gap-5 h-5/6">
+        <Card>
+          <section class="flex flex-col p-8 bg-secondary rounded-xl">
             <h1 class="font-bold">Misión</h1>
             <p class="text-justify">
               {{ carrera.mision }}
@@ -37,9 +35,9 @@
           </section>
         </Card>
 
-        <Card class="max-w-2xl">
-          <section class="flex flex-col  p-8 h-full bg-secondary rounded-xl">
-            <h1 class="font-bold pt-4 xl:pt-0">Visión</h1>
+        <Card>
+          <section class="flex flex-col p-8 bg-secondary rounded-xl">
+            <h1 class="pt-4 font-bold xl:pt-0">Visión</h1>
             <p class="text-justify">
               {{ carrera.vision }}
             </p>
