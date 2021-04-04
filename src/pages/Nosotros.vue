@@ -6,15 +6,17 @@
     />
 
     <section class="flex justify-center items-center">
-      <figure class="flex items-center w-1/6 md:w-full">
+      <figure
+        class="flex items-center w-1/6 xl:w-1/5 lg:w-1/3 md:w-4/6 sm:w-4/5"
+      >
         <img src="./../assets/img/logo-escuela.png" alt="promocional" />
       </figure>
     </section>
 
     <section
-      class="flex justify-around gap-5 py-10 pr-10 sm:flex-col md:flex-col lg:flex-col xl:grid-cols-2"
+      class="flex justify-around gap-5 py-10 pr-10 sm:flex-col md:flex-col lg:flex-col xl:grid-cols-2 lg:w-10/12 md:w-full"
     >
-      <div class="flex flex-col gap-3 w-1/3 xl:w-full lg:w-3/4 md:w-full">
+      <div class="flex flex-col gap-3">
         <Directivo
           v-for="directivo in directivos"
           :key="directivo.nombre"
@@ -36,10 +38,10 @@
         </Card>
 
         <Card class="max-w-2xl">
-          <section class="flex flex-col  p-8 bg-secondary rounded-xl">
-            <h1 class="font-bold">Misión</h1>
+          <section class="flex flex-col  p-8 h-full bg-secondary rounded-xl">
+            <h1 class="font-bold pt-4 xl:pt-0">Visión</h1>
             <p class="text-justify">
-              {{ carrera.mision }}
+              {{ carrera.vision }}
             </p>
           </section>
         </Card>

@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex items-center gap-5 p-3 bg-white text-primary-dark rounded-xl"
+    class="flex items-center gap-5 p-3 bg-white text-primary-dark rounded-xl w-full"
   >
     <img class="w-16 h-16" :src="computedFoto" :alt="nombre" />
     <article class="text-left">
