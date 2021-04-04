@@ -4,8 +4,17 @@
       titulo="Nuestra carrera"
       tagline="Información util sobre nuestra carrera, sus directivos y contactos principales."
     />
-    <section class="flex justify-around gap-5 py-10 sm:flex-col-reverse">
-      <div class="flex flex-col gap-3">
+
+    <section class="flex justify-center items-center">
+      <figure class="flex items-center w-1/6 md:w-full">
+        <img src="./../assets/img/logo-escuela.png" alt="promocional" />
+      </figure>
+    </section>
+
+    <section
+      class="flex justify-around gap-5 py-10 pr-10 sm:flex-col md:flex-col lg:flex-col xl:grid-cols-2"
+    >
+      <div class="flex flex-col gap-3 w-1/3 xl:w-full lg:w-3/4 md:w-full">
         <Directivo
           v-for="directivo in directivos"
           :key="directivo.nombre"
@@ -16,26 +25,25 @@
         />
       </div>
 
-      <Card class="max-w-2xl">
-        <section
-          class="flex flex-col items-center justify-center p-8 bg-secondary rounded-xl"
-        >
-          <p class="text-justify">
-            La carrera de Ingeniería en Tecnologías de la Información se ocupa
-            de formar profesionales con altos conocimientos tecnológicos en las
-            áreas de programación, redes, interacción humano computador, bases
-            de datos y sistemas web; capaces de planear, diseñar, organizar y
-            mantener la información de forma segura usando metodologías y
-            estándares internacionales, con un alto sentido de investigación y
-            responsabilidad con la sociedad y la comunidad productiva.
-          </p>
-          <img
-            class="block w-32 h-32 m-8"
-            src="./../assets/img/logo-utmach.png"
-            alt="utmach"
-          />
-        </section>
-      </Card>
+      <div class="flex flex-col gap-6">
+        <Card class="max-w-2xl">
+          <section class="flex flex-col  p-8 bg-secondary rounded-xl">
+            <h1 class="font-bold">Misión</h1>
+            <p class="text-justify">
+              {{ carrera.mision }}
+            </p>
+          </section>
+        </Card>
+
+        <Card class="max-w-2xl">
+          <section class="flex flex-col  p-8 bg-secondary rounded-xl">
+            <h1 class="font-bold">Misión</h1>
+            <p class="text-justify">
+              {{ carrera.mision }}
+            </p>
+          </section>
+        </Card>
+      </div>
     </section>
   </section>
 </template>
@@ -51,8 +59,8 @@ export default defineComponent({
   name: "Nosotros",
   components: { HeaderPage, Directivo, Card },
   setup() {
-    const { directivos } = datosCarrera;
-    return { directivos };
+    const { directivos, carrera } = datosCarrera;
+    return { directivos, carrera };
   }
 });
 </script>

@@ -6,8 +6,8 @@
     />
     <section class="flex justify-around gap-5 p-5 md:flex-col">
       <section class="flex flex-col w-1/3 gap-2 lg:w-full ">
-        <h3 class="py-5 text-3xl font-bold">
-          Qué es un ingeniero de tecnologías de la información?
+        <h3 class="py-5 text-4xl font-bold">
+          ¿Qué es un Ingeniero en Tecnologías de la Información?
         </h3>
         <p class="text-justify">{{ titulo.definicion_promocional }}</p>
       </section>
