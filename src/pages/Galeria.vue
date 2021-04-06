@@ -5,7 +5,7 @@
       tagline="Imágenes de los laboratorios, salas y áres de la escuela de informática."
     />
     <div
-      class="grid grid-cols-3 gap-5 text-center sm:grid-cols-1 md:grid-cols-2"
+      class="grid max-w-6xl grid-cols-3 gap-10 mx-auto my-5 text-center lg:mx-auto sm:grid-cols-1 lg:grid-cols-2"
     >
       <ItemGaleria
         v-for="item in galeria"

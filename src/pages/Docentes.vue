@@ -5,7 +5,7 @@
       tagline="Los docentes que educan en nuestra carrera."
     />
     <div
-      class="grid grid-cols-3 gap-5 text-center sm:grid-cols-1 md:grid-cols-2"
+      class="grid grid-cols-3 gap-5 text-center sm:grid-cols-1 lg:grid-cols-2"
     >
       <Profesor
         v-for="profesor in profesores"

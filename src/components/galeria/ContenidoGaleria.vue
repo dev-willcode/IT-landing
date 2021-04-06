@@ -25,10 +25,9 @@ export default defineComponent({
   },
   setup(props) {
     const computedFoto = computed(() => {
-      return (
-        getURL(props.galeria?.imagen?.url) ||
-        require("./../../assets/img/logo-utmach.png")
-      );
+      return props.galeria?.imagen?.url
+        ? getURL(props.galeria?.imagen?.url)
+        : require("./../../assets/img/logo-utmach.png");
     });
 
     return { computedFoto };

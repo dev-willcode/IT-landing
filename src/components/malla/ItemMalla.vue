@@ -44,13 +44,12 @@ export default defineComponent({
   setup(props) {
     const verSemestreDetalle = ref(false);
     const computedFoto = computed(() => {
-      return (
-        getURL(props.semestres?.imagen?.url) ||
-        require("./../../assets/img/logo-utmach.png")
-      );
+      return props.semestres?.imagen?.formats?.small?.url
+        ? getURL(props.semestres?.imagen?.formats?.small?.url)
+        : require("./../../assets/img/logo-utmach.png");
     });
 
-    const mostrarSemestre = function() {
+    const mostrarSemestre = function () {
       verSemestreDetalle.value = !verSemestreDetalle.value;
     };
 
