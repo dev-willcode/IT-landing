@@ -1,8 +1,8 @@
 <template>
   <section class="flex flex-col justify-center p-8">
     <HeaderPage
-      titulo="Nuestra carrera"
-      tagline="Información util sobre nuestra carrera, sus directivos y contactos principales."
+      titulo="Galería"
+      tagline="Imágenes de los laboratorios, salas y áres de la escuela de informática."
     />
     <div
       class="grid grid-cols-3 gap-5 text-center sm:grid-cols-1 md:grid-cols-2"
