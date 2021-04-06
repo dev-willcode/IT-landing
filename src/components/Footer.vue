@@ -45,7 +45,7 @@
 
   <section class="text-center text-white align-text-bottom bg-gray-800">
     <p class="py-2">
-      © Derechos Reservados UTMACH 2019
+      © Derechos Reservados UTMACH 2021
       <span class="font-semibold">UNIVERSIDAD TÉCNICA DE MACHALA</span>
     </p>
   </section>
