@@ -1,23 +1,25 @@
 <template>
-  <section class="relative" @click="mostrarGaleria()">
-    <img
-      class="shadow-md w-128 h-128 rounded-xl"
-      :src="computedFoto"
-      :alt="galeria.ubicacion_interna + galeria.ubicacion_externa"
-    />
-    <div
-      class="flex flex-col items-center justify-center gap-5 shadow-md cursor-pointer select-none image-overlay rounded-xl"
-    >
-      <h3 class="text-2xl font-semibold lg:text-xl">
-        {{ galeria.ubicacion_externa }}
-      </h3>
-      <p class="font-thin text-md">{{ galeria.ubicacion_interna }}</p>
-    </div>
-  </section>
   <section>
-    <Modal v-model="verGaleriaDetalle"
-      ><ContenidoGaleria :galeria="galeria"
-    /></Modal>
+    <div class="relative" @click="mostrarGaleria()">
+      <img
+        class="shadow-md w-128 h-128 rounded-xl"
+        :src="computedFoto"
+        :alt="galeria.ubicacion_interna + galeria.ubicacion_externa"
+      />
+      <div
+        class="flex flex-col items-center justify-center gap-5 shadow-md cursor-pointer select-none image-overlay rounded-xl"
+      >
+        <h3 class="text-2xl font-semibold lg:text-xl">
+          {{ galeria.ubicacion_externa }}
+        </h3>
+        <p class="font-thin text-md">{{ galeria.ubicacion_interna }}</p>
+      </div>
+    </div>
+    <section>
+      <Modal v-model="verGaleriaDetalle">
+        <ContenidoGaleria :galeria="galeria" />
+      </Modal>
+    </section>
   </section>
 </template>
 
@@ -37,13 +39,12 @@ export default defineComponent({
     const verGaleriaDetalle = ref(false);
 
     const computedFoto = computed(() => {
-      return (
-        getURL(props.galeria?.imagen?.url) ||
-        require("./../../assets/img/logo-utmach.png")
-      );
+      return props.galeria?.imagen?.formats?.small?.url
+        ? getURL(props.galeria?.imagen?.formats?.small?.url)
+        : require("./../../assets/img/logo-utmach.png");
     });
 
-    const mostrarGaleria = function() {
+    const mostrarGaleria = function () {
       verGaleriaDetalle.value = !verGaleriaDetalle.value;
     };
 

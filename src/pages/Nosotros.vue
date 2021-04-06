@@ -60,6 +60,7 @@ export default defineComponent({
   components: { HeaderPage, Directivo, Card },
   setup() {
     const { directivos, carrera } = datosCarrera;
+    console.log(directivos);
     return { directivos, carrera };
   }
 });

@@ -41,10 +41,9 @@ export default defineComponent({
   components: { LinkList },
   setup(props) {
     const computedFoto = computed(() => {
-      return (
-        getURL(props.semestres?.imagen?.url) ||
-        require("./../../assets/img/logo-utmach.png")
-      );
+      return props.semestres?.imagen?.url
+        ? getURL(props.semestres?.imagen?.url)
+        : require("./../../assets/img/logo-utmach.png");
     });
 
     return { computedFoto, descomponerStringArray };
