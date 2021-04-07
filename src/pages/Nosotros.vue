@@ -13,7 +13,7 @@
       </figure>
     </section>
 
-    <section class="flex items-center gap-5 px-12 mx-auto my-5 xl:flex-col">
+    <section class="flex items-center gap-5 mx-auto my-5 xl:flex-col">
       <div class="flex flex-col w-4/5 gap-3 xl:w-full">
         <Directivo
           v-for="directivo in directivos"

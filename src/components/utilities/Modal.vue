@@ -19,7 +19,7 @@
         >&#8203;</span
       >
       <div
-        class="inline-block w-3/5 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+        class="inline-block w-3/5 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:w-11/12"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-headline"
@@ -48,7 +48,21 @@ export default defineComponent({
       required: true
     }
   },
+  watch: {
+    modelValue(value) {
+      const element = document.getElementsByTagName("body")[0];
+      if (value) element.classList.add("modal-open");
+      else element.classList.remove("modal-open");
+    }
+  },
   components: { PrimaryButton },
   emits: ["update:modelValue"]
 });
 </script>
+
+<style>
+body.modal-open {
+  height: 100vh;
+  overflow: hidden;
+}
+</style>
