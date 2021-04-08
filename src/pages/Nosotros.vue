@@ -20,7 +20,7 @@
           :key="directivo.nombre"
           :nombre="directivo.nombre"
           :cargo="directivo.cargo"
-          :contacto="directivo.contacto"
+          :contacto="directivo.numero_contacto"
           :foto="directivo.foto"
         />
       </div>
@@ -60,6 +60,7 @@ export default defineComponent({
   components: { HeaderPage, Directivo, Card },
   setup() {
     const { directivos, carrera } = datosCarrera;
+    console.log(directivos);
     return { directivos, carrera };
   }
 });
