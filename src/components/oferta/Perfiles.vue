@@ -7,7 +7,7 @@
     >
       <Card :oscuro="false">
         <div
-          class="flex h-full p-12 bg-white rounded-lg shadow-xl text-primary-dark xl:w-full xl:flex-col"
+          class="flex h-full p-8 bg-white rounded-lg shadow-xl text-primary-dark xl:w-full xl:flex-col"
           :class="{ 'flex-row-reverse': index % 2 !== 0 }"
         >
           <article class="w-3/4 xl:w-full">
@@ -59,8 +59,8 @@ export default defineComponent({
   },
   components: { Card },
   setup() {
-    const descomponerCompetencias = function(competencias: string) {
-      return competencias.split("\n").filter(elem => !!elem);
+    const descomponerCompetencias = function (competencias: string) {
+      return competencias.split("\n").filter((elem) => !!elem);
     };
 
     return { getURL, descomponerCompetencias };
